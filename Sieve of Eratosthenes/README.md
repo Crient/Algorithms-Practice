@@ -1,9 +1,10 @@
-# GECHLENG LIM
-# COMP2350 - ALGORITHMS
-# LAB 1 - Sieve of Eratosthenes
+## LAB 1 - Sieve of Eratosthenes
+GECHLENG LIM
+COMP2350 - ALGORITHMS
+
 This program uses the Sieve of Eratosthenes algorithm to find all prime numbers less than or equal to a user input value n. The program first creates a list of consecutive integers starting from 2 up to n, which represents all possible prime candidates. It then loops through the list while the current number is less than or equal to the square root of n, since any multiples beyond that point would have already been removed. For each valid number, the program eliminates its multiples by setting them to zero in the list. Because the list starts at the value 2, there is a difference between the actual number values and their list indices, which is handled using nums[j - 2] = 0 to correctly mark eliminated numbers. After the sieving process is complete, all remaining non zero values are collected as prime numbers. The program prints the original list, the crossed out list, and the final list of primes to clearly show how the algorithm works step by step.
 
-* Sample Output
+## Sample Output
 Input: n = 5
 ======================= 
 Output:
